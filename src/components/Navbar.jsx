@@ -11,8 +11,8 @@ const Navbar = () => {
     return (
         <div className="nav-container">
             <div className="logo-container">
-                <Avatar src={icon} size="logo" />
-                <Typography.Title level={2} className="logo">
+                <Avatar src={icon} size="large" />
+                <Typography.Title level={6} className="logo">
                     <Link to="/">Crypton</Link>
                 </Typography.Title>
             </div>
