@@ -25,18 +25,16 @@ const Cryptocurrencies = ({simplified}) => {
 
   }, [cryptosList, searchTerm])
 
-  console.log(cryptos)
 
   if(isFetching) return "Loading...";
 
   return (
     <>
       {!simplified && 
-
+      
         <div className="search-crypto">
           <Input placeholder="Search Cryptocurrency" onChange={(e) => setSearchTerm(e.target.value)} />
         </div>
-        
       }
       <Row gutter={[32, 32]} className="crypto-card-container">
         {
