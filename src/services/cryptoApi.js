@@ -5,8 +5,6 @@ const cryptoApiHeaders = {
     'X-RapidAPI-Host': 'coinranking1.p.rapidapi.com'
 }
 
-// const BASE_URL = "https://coinranking1.p.rapidapi.com/coin/Qwsogvtv82FCd/exchanges";
-
 
 
 const baseUrl = "https://coinranking1.p.rapidapi.com";
@@ -31,4 +29,8 @@ export const cryptoApi = createApi({
 
 // ${timePeriod}
 
-export const { useGetCryptosQuery, useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } = cryptoApi;
+export const { 
+     useGetCryptosQuery,
+     useGetCryptoDetailsQuery,
+     useGetCryptoHistoryQuery
+    } = cryptoApi;
