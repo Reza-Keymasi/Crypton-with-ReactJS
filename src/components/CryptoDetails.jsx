@@ -5,14 +5,15 @@ import millify from "millify";
 import { Col, Row, Typography, Select } from "antd";
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined,
        ExclamationCircleOutlined, StopOutlined, TrophyOutlined, 
-       CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
-       
+       CheckOutlined, NumberOutlined, ThunderboltOutlined 
+} from '@ant-design/icons';   
        
 // services
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from "../services/cryptoApi.js";
 
 // components
 import {LineChart} from "./Index.jsx";
+import {  Loader } from "../components/Index"
        
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -31,7 +32,7 @@ const CryptoDetails = () => {
   // console.log()
 
 
-  if(isFetching) return "Loading..."
+  if(isFetching) return <Loader />
 
   const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 
